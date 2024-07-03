@@ -16,9 +16,9 @@ import { SubjectsModule } from './subjects/subjects.module';
     ConfigModule.forRoot(),
     // TypeORM
     TypeOrmModule.forRoot({
-      ssl: process.env.STAGE === 'prod',
+      ssl: 'prod' === 'prod',
         extra: {
-          ssl: process.env.STAGE ==='prod'
+          ssl: 'prod' ==='prod'
           ? { rejectUnauthorized: false }
           : null
         },
@@ -27,7 +27,7 @@ import { SubjectsModule } from './subjects/subjects.module';
       port: +process.env.DB_PORT,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
+      database: process.env.DB_NAME,
       autoLoadEntities: true,
       synchronize: true,
     }),

@@ -41,6 +41,12 @@ You must download docker desktop, go to https://docs.docker.com/desktop/install/
 ```
 You must create a .env file and create the follow variables:
 
+This for local deployment:
+
+  DB_HOST=localhost
+  DB_PORT=5432
+  DB_USERNAME=postgres
+
 DB_PASSWORD=example_hereWriteYourOwnPassword
 DB_NAME=example_hereWriteYourOwnDataBaseName
 ```
