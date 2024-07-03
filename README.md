@@ -28,8 +28,19 @@
 
 ## Installation
 
+```
+You must download docker desktop, go to https://docs.docker.com/desktop/install/windows-install/ and install.
+```
+
+## Creating Docker DB
 ```bash
-$ npm install
+$ docker-compose up
+```
+
+## Creating DB with Docker
+
+```bash
+$ docker-compose up
 ```
 
 ## Running the app
