@@ -16,12 +16,13 @@ import { SubjectsModule } from './subjects/subjects.module';
     ConfigModule.forRoot(),
     // TypeORM
     TypeOrmModule.forRoot({
-      ssl: 'prod' === 'prod',
-        extra: {
-          ssl: 'prod' ==='prod'
-          ? { rejectUnauthorized: false }
-          : null
-        },
+      // ------------------------------------------- SSL --------------------------------------------------------------
+      // ssl: 'prod' === 'prod',
+      //   extra: {
+      //     ssl: 'prod' ==='prod'
+      //     ? { rejectUnauthorized: false }
+      //     : null
+      //   },
       type: 'postgres',
       host: process.env.DB_HOST,
       port: +process.env.DB_PORT,
