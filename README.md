@@ -28,16 +28,24 @@
 
 ## Installation
 
+```bash
+$ npm install
+```
+
+## Installing DOCKER DESKTOP
 ```
 You must download docker desktop, go to https://docs.docker.com/desktop/install/windows-install/ and install.
 ```
 
-## Creating Docker DB
-```bash
-$ docker-compose up
+## Creating a .ENV file
+```
+You must create a .env file and create the follow variables:
+
+DB_PASSWORD=example_hereWriteYourOwnPassword
+DB_NAME=example_hereWriteYourOwnDataBaseName
 ```
 
-## Creating DB with Docker
+## Creating POSTGRES with DOCKER
 
 ```bash
 $ docker-compose up
