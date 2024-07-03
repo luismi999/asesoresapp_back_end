@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Instala las dependencias
-RUN yarn install
+RUN npm install
 
 # Copia el resto de la aplicación
 COPY . .
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar la aplicación
-CMD ["yarn", "start:dev"]
+CMD ["npm", "run", "start"]
