@@ -11,7 +11,7 @@ import { SigninDto } from './dto/signin-auth.dto';
 
 // Entidad
 import { User } from 'src/users/entities/user.entity';
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 
 @Injectable()
 export class AuthService {
