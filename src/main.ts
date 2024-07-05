@@ -23,9 +23,9 @@ async function bootstrap() {
 
   /* Mi prefijo */
   app.setGlobalPrefix('asesoresapp/api');
-  await app.listen(process.env.HOST_PORT);
+  await app.listen(3000);
 
   /* Mostramos el mensaje del logger */
-  logger.log(`The server is running on server ${process.env.HOST_PORT}`);
+  logger.log(`The server is running on server 3000`);
 }
 bootstrap();

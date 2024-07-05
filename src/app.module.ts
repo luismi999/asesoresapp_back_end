@@ -17,18 +17,18 @@ import { SubjectsModule } from './subjects/subjects.module';
     // TypeORM
     TypeOrmModule.forRoot({
       // ------------------------------------------- SSL --------------------------------------------------------------
-      // ssl: 'prod' === 'prod',
-      //   extra: {
-      //     ssl: 'prod' ==='prod'
-      //     ? { rejectUnauthorized: false }
-      //     : null
-      //   },
+      ssl: 'prod' === 'prod',
+        extra: {
+          ssl: 'prod' ==='prod'
+          ? { rejectUnauthorized: false }
+          : null
+        },
       type: 'postgres',
-      host: process.env.DB_HOST,
-      port: +process.env.DB_PORT,
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
+      host: process.env.DATABASE_HOST,
+      port: +process.env.DATABASE_PORT,
+      username: process.env.DATABASE_USER,
+      password: process.env.DATABASE_PASSWORD,
+      database: process.env.DATABASE_NAME,
       autoLoadEntities: true,
       synchronize: true,
     }),
