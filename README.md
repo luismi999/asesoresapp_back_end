@@ -26,29 +26,25 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Instalar DOCKER DESKTOP 
+```
+Deberás descargar docker desktop, ir a https://docs.docker.com/desktop/install/windows-install/ y descargar e instalar.
+```
+
+## Clonar
+```
+Lo primero que haremos será clonar el repositorio.
+```
+```bash
+$ git clone https://github.com/luismi999/asesoresapp_back_end.git
+```
+
+## 
+
 ## Installation
 
 ```bash
 $ npm install
-```
-
-## Installing DOCKER DESKTOP
-```
-You must download docker desktop, go to https://docs.docker.com/desktop/install/windows-install/ and install.
-```
-
-## Creating a .ENV file
-```
-You must create a .env file and create the follow variables:
-
-This for local deployment:
-
-  DB_HOST=localhost
-  DB_PORT=5432
-  DB_USERNAME=postgres
-
-DB_PASSWORD=example_hereWriteYourOwnPassword
-DB_NAME=example_hereWriteYourOwnDataBaseName
 ```
 
 ## Creating POSTGRES with DOCKER

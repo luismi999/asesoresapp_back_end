@@ -21,11 +21,13 @@ async function bootstrap() {
     })
   );
 
+  const port = process.env.PORT || 3000;
+
   /* Mi prefijo */
   app.setGlobalPrefix('asesoresapp/api');
-  await app.listen(3000);
+  await app.listen(port);
 
   /* Mostramos el mensaje del logger */
-  logger.log(`The server is running on server 3000`);
+  logger.log(`The server is running on server ${port}`);
 }
 bootstrap();
